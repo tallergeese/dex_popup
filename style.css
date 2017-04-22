@@ -1,0 +1,61 @@
+body{
+  height: 200vw;
+  font-family: "Roboto", "sans-serif";
+  color: #555555;
+}
+#msg-popup{
+  position: fixed;
+  bottom: 0;
+  right: 5vw;
+  width: 400px;
+  height: 500px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.16);
+  text-align: center;
+  transition-duration: 500ms;
+  visibility: initial;
+}
+#msg-popup-content{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10%; 
+}
+#msg-popup-close{
+  position:absolute;
+  top: 1vw;
+  right: 1vw;
+  opacity: .3;
+}
+#msg-popup-close:hover{
+  opacity: .6;
+}
+#msg-popup img{
+  width: 50%;
+  height: auto;
+}
+#msg-popup p{
+  margin: 10% auto;
+}
+#msg-popup-button{
+  width: 100%;
+  height: 10%;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 132, 255, 0.701961);
+  background-color: rgb(0, 132, 255);
+  opacity:0.6;
+}
+#msg-popup-content a{
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  line-height: 40px;
+}
+#msg-popup-button:hover{
+    box-shadow: 0 3px 20px rgba(0, 132, 255, 0.701961);
+}
+
+#msg-popup.hidden{
+  visibility: hidden;
+  bottom: -500px;
+}
