@@ -22,8 +22,8 @@ body{
 }
 #msg-popup-close{
   position:absolute;
-  top: 1vw;
-  right: 1vw;
+  top: 5%;
+  right: 5%;
   opacity: .3;
 }
 #msg-popup-close:hover{
